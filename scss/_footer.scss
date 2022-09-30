@@ -1,0 +1,106 @@
+/* === SITE FOOTER === */
+.site-footer {
+    width: 100vw;
+    color: $color-font-light;
+    // background: linear-gradient(0deg, #161616dc 0%, $color-bg 100%), url(../img/footer-bg.jpg) no-repeat;
+    background: $color-bg;
+    background-size: 100%;
+    background-position: center;
+    overflow: hidden;
+
+    .site-footer__wrap {
+        padding: 0 $base-padding*3;
+        width: 98%;
+        max-width: 1400px;
+
+        &.flex {
+            justify-content: center;
+        }
+    }
+
+    .site-footer__logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: $base-margin*5 0;
+    }
+
+    ul {
+        margin: $base-margin*3 $base-margin*3.5 $base-margin*2;
+
+        li {
+            padding: $base-padding*.5 0;
+            font-weight: $font-weight-sm;   
+            
+            &:active, &:focus, &:hover {
+                a {
+                    color: darken($color: $color-font-light, $amount: 30);
+                }
+            }
+
+            a {
+                color: $color-font-light;
+            }
+        }
+    }
+
+    .services__list {
+        li:not(first-child) {
+            text-transform: uppercase;
+        }
+    }
+    .services__list, .links__list {
+        li:first-child {
+            font-weight: $base-font-weight;        
+        }
+    }
+
+    .footer-link__social {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: $base-margin 0;
+
+        li {
+            display: inline-block;
+            padding: $base-padding;
+        }
+    }
+
+    .copyright {
+        padding: $base-padding 0;
+        color: darken($color: $color-font-light, $amount: 30);
+
+        padding: $base-padding * 3;
+        margin: $margin-center-horizontal;
+        padding-bottom: $base-padding * 4;
+        font-size: $base-font-size;
+        opacity: .8;
+        text-align: center;
+        width: 100%;
+    }
+
+    // mediaQuery
+    @media (max-width: 850px) {
+        .site-footer__logo {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .site-footer__logo {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .site-footer__logo {
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+
+}

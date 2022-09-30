@@ -1,0 +1,198 @@
+/* === SITE SECTION - CONTACT === */
+#contact {
+    &.section {
+        width: 100vw;
+        background-color: $color-bg-light;
+        background-image: url(../img/background_contact.png);
+        background-position: bottom right;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        padding: $base-padding*8 0;
+        overflow: hidden;
+    }
+
+    // &.container {
+    //     background: url(../img/background_contact.jpg);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     padding: 80px 0;
+
+    //     @include breakpoint($bp: 720px) {
+    //         background-size: 300%;
+    //         background-color: rgba(202,202,202,255);
+    //     }
+    // }
+
+    .section__content-wrap {
+        margin-bottom: $base-margin*10;
+        padding: 0 $base-padding*3;
+        width: 98%;
+        max-width: 1400px;    
+    }
+
+    // .wrap {
+    //     margin-bottom: 100px;
+
+    //     @include md {
+    //         margin-bottom: 0;
+    //     }
+    // }
+
+    .content__container {
+        text-align: center;
+        margin: $base-margin*8 0 $base-margin*5;
+    }
+
+    h3 {
+        color: $color-font;
+        font-size: $base-font-size * 2.8;
+        font-weight: $font-weight-xl;
+        line-height: $base-line-heigh * 1.5;
+        padding: $base-padding * 4;
+        text-align: right;
+        margin-right: $base-font-size*3;
+    }
+
+    // h1 {
+    //     text-align: center;
+    //     display: inline-block;
+    //     padding: 1rem 0;
+    //     font-size: $base-font-size * 2.8;
+    //     text-transform: uppercase;
+    //     font-weight: $font-weight-xxl;
+    //     letter-spacing: .1rem;
+    //     margin-bottom: 4rem;
+    //     position: relative;
+
+    //     &::after {
+    //         content: '';
+    //         width: 75px;
+    //         height: 8px;
+    //         background-color: $color-hover;
+    //         position: absolute;
+    //         bottom: 5px;
+    //         left: 0;
+
+    //         @include md {
+    //             width: 35px;
+    //             height: 5px;
+    //             bottom: 10px;
+    //         }
+    //     }
+
+    //     @include md {
+    //         margin-bottom: 2rem;
+    //     }
+
+    //     @include sm {
+    //         font-size: $font-size-lg;
+    //     }
+    // }
+
+    .content-card {
+        width: 300px;
+        height: 420px;
+        // background-color: lighten($color: $color-bg, $amount: 30);
+        // background-color: $color-bg-light;
+        background: linear-gradient(225deg, rgba(237,242,244,1) 0%, rgba(135,211,214,.5) 100%), $color-bg-light;
+        text-align: center;
+        box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.25);
+        padding: $base-padding * 3 $base-padding;
+        margin: $base-margin;
+        border-radius: 2px;   
+        color: $color-font; 
+
+        h2 {
+            font-size: $base-font-size * 1.5;
+            font-weight: $base-font-weight;
+            text-transform: uppercase;
+            padding: $base-padding*2 0;
+        }
+
+        &.content-card__company {
+            h2 {
+                font-size: $base-font-size*1.25;
+                text-transform: initial;
+            }
+        }
+
+        li {
+            margin: 2rem 0;
+            // font-weight: $base-font-weight-sm;
+
+            a {
+                font-size: $base-font-size * 1.5;
+            }
+
+            p {
+                font-size: $base-font-size;
+                line-height: $base-line-heigh*1.5;
+            }
+        }
+
+        ul.content-item__email {
+            margin-top: $base-margin*4;
+
+            li {
+                a {
+                    font-size: $base-font-size;
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        ul.content-item__address {
+            margin-top: $base-margin*4;
+
+            li {
+                font-size: $base-font-size;
+                margin: $base-font-size*.5 0;
+            }    
+        }
+
+        ul.content-item__company {
+            margin-top: $base-margin*3;
+
+            li {
+                font-size: $base-font-size;
+                margin: $base-font-size*.5 0;
+                line-height: $line-heigh-md;
+            }    
+        }
+
+    }
+
+    // mediaQuery
+    @media (max-width: 600px) {
+        .section__content-wrap {
+            margin-bottom: 0;
+        }
+
+        .content-card {
+            height: 380px;
+
+            img {
+                width: 100px;
+            }
+
+            li {
+                a {
+                    font-size: $base-font-size*1.3;
+                }
+            }
+
+            ul.content-item__phone {
+                li {
+                    margin-top: $base-font-size;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        .section__content-wrap {
+            padding: 0 $base-padding*2;
+        }
+    }
+
+}

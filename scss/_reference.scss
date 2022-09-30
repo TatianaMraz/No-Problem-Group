@@ -1,0 +1,66 @@
+/* === SITE SECTION - REFERENCE === */
+/* == root == */
+
+#reference {   
+    overflow: hidden;
+
+    h3 {
+        color: $color-font-light;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-lg;
+        line-height: $line-heigh-md;
+        padding: $padding-xxl;
+    }
+
+    p {
+        padding: $padding-xxl;
+        font-size: $font-size-md;
+        // color: $color-font-light;
+        line-height: $line-heigh-md;
+        font-weight: $base-font-weight;
+
+        span {
+            // color: $color-highlight;
+            font-weight: $font-weight-xl;
+            // text-shadow: 0 0 10px #00b3ff;
+        }
+    }
+
+    &.section {
+        width: 100vw;
+        // margin-top: -80px;
+        background: linear-gradient(90deg, $color-bg 50%, $color-highlight 50%);        
+        // padding-top: $base-padding*8;
+        overflow: hidden;
+        color: $color-font;
+    }
+
+    .section__content-wrap {
+        padding: 0 $base-padding*3;
+        width: 98%;
+        max-width: 1400px;
+        
+        & > article {
+            padding: $padding-xl $padding-lg;
+            margin: $margin-xxl*3 0 $margin-xxl;
+            
+            h3 {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }    
+    }
+
+    .article-content__container {
+        padding: $base-padding*6;
+    }
+
+    .article-content__container:nth-of-type(2) {
+        margin-left: $base-margin*8;
+    }
+}
+
+
+
+

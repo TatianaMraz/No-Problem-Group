@@ -1,4 +1,4 @@
 
 ### Links
 
-- [Live Site URL](https://TatianaMraz.github.io/No-Problem-Group.github.io/)
+- [Live Site URL](https://tatianamraz.github.io/No-Problem-Group/)

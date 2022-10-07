@@ -1,1 +1,2 @@
-# No-Problem-Group
+### Difficulties 
+- complications with variables down the tree
